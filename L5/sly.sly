@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="">
+    <entity entityType="CLASS" id="23216" isAbstract="false" name="MatrixTest" visibility="PUBLIC">
+      <method isAbstract="false" isStatic="false" name="testNominalCase" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="testChainOperations" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="testAdditionWithDifferentModulus" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="testSubtractionWithDifferentModulus" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="testMultiplicationWithDifferentModulus" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="testOperationsOnEmptyMatrices" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="testMatrixConstructorWithInvalidParams" returnType="void" view="DEFAULT" visibility="PUBLIC"/>
+    </entity>
+    <entity entityType="CLASS" id="22859" isAbstract="false" name="Matrix" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="rows" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="cols" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="mod" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="data" type="int[][]" visibility="PRIVATE"/>
+      <method isAbstract="false" isStatic="false" name="toString" returnType="String" view="DEFAULT" visibility="PUBLIC"/>
+      <method isAbstract="false" isStatic="false" name="random" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="rows" type="int"/>
+        <variable const="false" name="cols" type="int"/>
+        <variable const="false" name="mod" type="int"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="operate" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="other" type="Matrix"/>
+        <variable const="false" name="op" type="BiFunction&lt;Integer,Integer,Integer&gt;"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="add" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="other" type="Matrix"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="sub" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="other" type="Matrix"/>
+      </method>
+      <method isAbstract="false" isStatic="false" name="product" returnType="Matrix" view="DEFAULT" visibility="PUBLIC">
+        <variable const="false" name="other" type="Matrix"/>
+      </method>
+    </entity>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <componentView color="-2079" componentID="22859" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>190</x>
+        <y>170</y>
+        <w>490</w>
+        <h>205</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="23216" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>200</x>
+        <y>430</y>
+        <w>320</w>
+        <h>160</h>
+      </geometry>
+    </componentView>
+  </umlView>
+</classDiagram>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-15" standalone="no"?>
+<classDiagram>
+  <diagramElements defaultViewEntities="ALL" defaultViewEnum="true" defaultViewMethods="TYPE_AND_NAME" defaultVisibleTypes="true" informations="" name="Exercice 2.1">
+    <entity entityType="CLASS" id="2902" isAbstract="false" name="Commande" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="numero" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="date" type="Date" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="librairie" type="Librairie" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="editions" type="Liste&lt;Edition&gt;" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="2698" isAbstract="false" name="Librairie" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="nom" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="adresse" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="commandes" type="Liste&lt;Commande&gt;" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="2475" isAbstract="false" name="Edition" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="date" type="Date" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="prix" type="double" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="ordre" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="nbExemplaires" type="int" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="livre" type="Livre" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="negociations" type="Liste&lt;Negociation&gt;" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="commande" type="Commande" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="2345" isAbstract="false" name="Auteur" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="nom" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="prenom" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="negociations" type="Liste&lt;Negociation&gt;" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="livre" type="Livre" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="2258" isAbstract="false" name="Livre" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="titre" type="String" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="auteurs" type="Liste&lt;Auteur&gt;" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="editions" type="Liste&lt;Edition&gt;" visibility="PRIVATE"/>
+    </entity>
+    <entity entityType="CLASS" id="8361" isAbstract="false" name="Negociation" visibility="PUBLIC">
+      <attribute const="false" defaultValue="" isStatic="false" name="pourcentage" type="double" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="auteur" type="Auteur" visibility="PRIVATE"/>
+      <attribute const="false" defaultValue="" isStatic="false" name="edition" type="Edition" visibility="PRIVATE"/>
+    </entity>
+  </diagramElements>
+  <umlView grid="10" name="Main view" open="true">
+    <componentView color="-2079" componentID="8361" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>300</x>
+        <y>460</y>
+        <w>150</w>
+        <h>100</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="2258" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>310</x>
+        <y>340</y>
+        <w>170</w>
+        <h>100</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="2345" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>540</x>
+        <y>340</y>
+        <w>250</w>
+        <h>115</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="2475" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>50</x>
+        <y>320</y>
+        <w>210</w>
+        <h>160</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="2698" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>60</x>
+        <y>130</y>
+        <w>220</w>
+        <h>100</h>
+      </geometry>
+    </componentView>
+    <componentView color="-2079" componentID="2902" displayAttributes="true" displayDefault="true" displayMethods="true">
+      <geometry>
+        <x>390</x>
+        <y>130</y>
+        <w>220</w>
+        <h>115</h>
+      </geometry>
+    </componentView>
+    <note color="-2079" content="Diagramme d'implementation">
+      <noteGeometry>
+        <x>60</x>
+        <y>70</y>
+        <w>120</w>
+        <h>45</h>
+      </noteGeometry>
+    </note>
+  </umlView>
+</classDiagram>
